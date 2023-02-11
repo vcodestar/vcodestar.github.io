@@ -210,6 +210,9 @@ div footer a:hover{
 i{
     color: white;
 }
+li a i{
+    color : black;
+}
 
 
 
