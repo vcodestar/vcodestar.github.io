@@ -60,6 +60,10 @@ div footer a{
     
 }
 
+footer i{
+    color: white;
+}
+
 div footer a:hover{
     color: aqua;
     width:50px;
@@ -72,7 +76,7 @@ div footer a:hover{
 }
 
 i{
-    color: white;
+    color: black;
 }
 li a i{
     color : black;
