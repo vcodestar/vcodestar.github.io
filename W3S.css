@@ -104,4 +104,14 @@ li a i{
     }
 }
 
+@media screen and (max-width: 300px) {
+    .w3-sidebar {
+      width: 40%;
+    }
+  }
 
+  @media screen and (min-width: 1000px) {
+    .w3-sidebar {
+      width: 20%;
+    }
+  }
