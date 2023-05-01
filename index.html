@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="brocode.css">
-    <link rel="shortcut icon" type="image/png" href="C:/Users/admin/Documents/pycharmprojects/HTMLs/2002$/images/planets.jpg"/><!--favicon-->
-    <script src="https://kit.fontawesome.com/967252b7d1.js" crossorigin="anonymous"></script>
+<html>
+<title>VC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="W3S.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/967252b7d1.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -13,92 +15,84 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VC</title>
-</head>
 <body>
 
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:35%">
+  <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i></a> 
+  
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Java
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="javapda.html" class="w3-bar-item w3-button">PDA</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+    </div>
+  </div>
 
-<nav>
-    
-    
-    <ul>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">C
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+    </div>
+  </div> 
 
-        <li><a href="index.html" ><i class="fa fa-home" aria-hidden="true"></i></a></li>
-        <!--<li><a href="#">HTML</a>
-        
-            <ul>
-                <li><a href="index.html">Loading Screen</a></li>
-                <li><a href="rgbloader.html">Spinning RGB Loader</a></li>
-                <li><a href="movingEyes.html">Moving Eyes</a></li>
-                <li><a href="water.html">Water</a></li>
-                <li><a href="sidebar.html">Live Wallpaper</a></li>
-                
-            </ul>
-            
-        </li>-->
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Python
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="CodingBat.html" class="w3-bar-item w3-button">Coding Bat</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+    </div>
+  </div>
 
-        <li><a href="#">Java</a>
-            <ul>
-                <li><a href="javapda.html">PDA</a></li>
-                <li><a href="W3S.html">W3S</a></li>
-                <li><a href="Leetcode/MedianOfTwoSortedaArrays/MedianOfTwoSortedArrays.html">Median of Two Sorted Arrays</a></li>
-            </ul>
-        </li>
-        
-        <li><a href="#">C</a></li>
-    
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Haskell
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="Haskell/Lab3.hs" class="w3-bar-item w3-button" >Lab 3</a>
+      <a href="Haskell/Lab4.hs" class="w3-bar-item w3-button" >Lab 4</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+    </div>
+  </div>
 
-        <li><a href="#">Python</a>
-            <ul>
-                <li><a href="CodingBat.html">Coding Bat</a></li>
-            </ul>
-        </li>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Risc-V Assembly
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="Assembly/PositionDetector/PositionDetector.s" class="w3-bar-item w3-button">Position Detector (Lab 7)</a>
+    </div>
+  </div>
+  
+</div>
 
+<div style="margin-left:30%">
 
-        <li><a href="#">Haskell</a>
-        <ul>
-            <li><a href="Haskell/Lab3.hs">Lab 3</a></li>
-            <li><a href="Haskell/Lab4.hs">Lab 4</a></li>
-        </ul>
-        </li>
-
-        <li><a href="#">Risc-V Assembly</a>
-            <ul>
-                <li><a href="Assembly/PositionDetector/PositionDetector.html">Position Detector</a></li>
-            </ul>
-            </li>
-        
-        
-        
-        
-    </ul>
-
-    
-</nav>
-
-<div class="logo"><p><h2 data-text="codestar">codestar</h2></p></div>
-
-<!--<div class="video-container"><iframe width="560px" height="315px" src="https://www.youtube.com/embed/rxjza2n3qn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>-->
+<div class="w3-container">
+<h2>Dropdown in Sidebar</h2>
+<p>In this example, we have added a dropdown menu inside the sidebar.</p>
+<p>Notice the caret-down icon, which we use to indicate that this is a dropdown menu.</p>
+</div>
 
 
+</div>
+      
 <div>
     <footer>
         <!---<a href="#"><i class="fab fa-facebook"></i></a>-->
         <a href="https://www.instagram.com/chasanis_/"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/vcodestar"><i class="fab fa-github"></i></a>
         <!--<a href="#"><i class="fas fa-info"></i></a>
         <a href="#"><i class="fas fa-share-alt"></i></a>-->
         <!--<i class="fa fa-apple"></i>-->
     </footer>
 </div>
 
-    
-    
-    <!--<div class="container">
-        <div class="child"></div>
-    </div>-->
-    
-    
 </body>
 </html>
