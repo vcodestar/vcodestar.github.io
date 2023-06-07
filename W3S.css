@@ -134,6 +134,7 @@ li a i{
 @media screen and (min-width: 700px) {
 .w3-sidebar {
   width: 20% !important;
+  overflow-x : scroll;
     }
 
 }
