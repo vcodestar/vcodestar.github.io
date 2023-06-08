@@ -68,7 +68,7 @@ data['Cluster'] = cluster_labels
 cluster_majority = {}
 for cluster in range(num_clusters):
     cluster_data = data[data['Cluster'] == cluster]
-    majority_class = mode(cluster_data['price_range'])[0][0]  # Assuming the target class is in a column named 'Class'
+    majority_class = mode(cluster_data['price_range'])[0][0]  
     cluster_majority[cluster] = majority_class
     print(f"Cluster {cluster+1}:Majority class:", cluster_majority[cluster])
 
