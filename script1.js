@@ -4,3 +4,5 @@ function toggleSidebar() {
   sidebar.classList.toggle('open');
   console.log("Hello");
 }
+
+

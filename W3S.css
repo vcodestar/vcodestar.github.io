@@ -37,7 +37,7 @@ footer img{
 }
 
 footer{
-    z-index: 10000000000;
+    z-index: 9998;
     background-color:red;
     position: absolute;
     display: flex;
