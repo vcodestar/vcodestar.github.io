@@ -27,10 +27,22 @@
   
   #toggleButton {
     position: fixed;
-    top: 0px;
+    top: 35%;
     left: 0px;
+    height: 30%;
     width: 20px;
-    height: 20px;
+    border: none;
   }
   
+  .class1 {
+    color: white;
+    height: 30%;
+    top: 35%
+  }
+  
+  .class2 {
+    color: black;
+    height: 100%;
+    top: 0%;
+  }
   
