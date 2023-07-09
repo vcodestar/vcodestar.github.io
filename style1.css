@@ -8,6 +8,10 @@
     padding: 20px;
     transition: left 0.3s ease-in-out;
     z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .sidebar ul {
