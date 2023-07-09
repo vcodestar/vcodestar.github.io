@@ -2,6 +2,7 @@ var sidebar = document.getElementById('sidebar');
 var opn = false;
 var tgl = document.getElementById("toggleButton");
 var isClass1 = false;
+tgl.classList.add("class1");
 
 
 function toggleSidebar() {

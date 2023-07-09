@@ -27,9 +27,7 @@
   
   #toggleButton {
     position: fixed;
-    top: 35%;
     left: 0px;
-    height: 30%;
     width: 20px;
     border: none;
   }
@@ -43,6 +41,6 @@
   .class2 {
     color: black;
     height: 100%;
-    top: 0%;
+    top: 0;
   }
   
