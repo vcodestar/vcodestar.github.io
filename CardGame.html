@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="W3S.css">
+<link rel="stylesheet" href="style1.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/967252b7d1.js" crossorigin="anonymous"></script>
     <link
@@ -17,16 +18,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <body>
 
-<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:35%">
+<div class="sidebar" id="sidebar">
   <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i></a> 
-  
-  <div class="w3-dropdown-hover">
+  <button id="toggleButton" onclick="toggleSidebar()">
+    <i class="fa fa-caret-right"></i>
+  </button>
+
+
+  <div class="dropdown">
+  <div class="dropdown-btn">
     <button class="w3-button">Card Game
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="w3-dropdown-content w3-bar-block">
+    <div class="dropdown-content">
 
-        <a href="AI_HW2/HW2/GameBoard.java" class="w3-bar-item w3-button">GameBoard.java</a>
+      <a href="AI_HW2/HW2/GameBoard.java" class="w3-bar-item w3-button">GameBoard.java</a>
       <a href="AI_HW2/HW2/Human.java" class="w3-bar-item w3-button">Human.java</a>
       <a href="AI_HW2/HW2/Bot.java" class="w3-bar-item w3-button">Bot.java</a>
       <a href="AI_HW2/HW2/Team.java" class="w3-bar-item w3-button">Team.java</a>
@@ -38,17 +44,11 @@
     </div>
   </div>
 
-  
+  </div>
   
 </div>
 
 <div style="margin-left:30%">
-
-<div class="w3-container">
-<h2>Dropdown in Sidebar</h2>
-<p>In this example, we have added a dropdown menu inside the sidebar.</p>
-<p>Notice the caret-down icon, which we use to indicate that this is a dropdown menu.</p>
-</div>
 
 
 </div>
@@ -64,6 +64,8 @@
         <!--<i class="fa fa-apple"></i>-->
     </footer>
 </div>
+
+<script src="script1.js"></script>
 
 </body>
 </html>
