@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
   }
+
   
   .sidebar ul {
     list-style-type: none;
@@ -47,4 +48,43 @@
     height: 100%;
     top: 0;
   }
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
   
+  /* Style the dropdown button */
+  .dropdown .dropdown-btn {
+    color: 000;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Style the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0;
+  }
+
+  /* Style the dropdown options */
+  .dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    z-index:10000000000;
+  }
+
+  /* Show the dropdown content when the dropdown button is clicked */
+  .dropdown.show .dropdown-content {
+    display: block;
+    z-index: 10000000000000000000;
+  }
