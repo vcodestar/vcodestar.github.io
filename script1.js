@@ -45,3 +45,11 @@ tgl.addEventListener("click", function() {
   isClass1 = !isClass1;
 });
 
+function downloadZip() {
+    // Replace 'YOUR_PUBLIC_LINK' with the actual link to your zip file.
+    var zipFileUrl = 'https://drive.google.com/drive/u/1/folders/1T7PNVPjMOQArZHmZbvn4AxCWtztIDei-';
+
+    // Open the link in a new tab or window to initiate the download.
+    window.open(zipFileUrl, '_blank');
+}
+
