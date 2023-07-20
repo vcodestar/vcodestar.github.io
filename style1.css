@@ -35,9 +35,11 @@
 
 #toggleButton {
   position: fixed;
-  left: 0px;
+  left: 0;
+  top: 0; /* Add top: 0 to ensure it's at the top of the viewport */
   width: 20px;
   border: none;
+  z-index: 10000; /* Increase z-index to ensure it's above other elements */
 }
   
   .class1 {
