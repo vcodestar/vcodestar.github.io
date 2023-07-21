@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/967252b7d1.js" crossorigin="anonymous"></script>
   <title>Centered List with Overflow-y Auto</title>
   <style>
     body {
@@ -30,18 +33,20 @@
       display: block;
       width: 100%;
       padding: 10px;
-      margin: 10px 0;
+      margin: 13px 0;
       text-align: center;
       text-decoration: none;
       color: #fff;
       background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
       border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 14px 25px;
+      font-size: 1.25em;
     }
 
     ul li a span
     {
       position: relative;
+      z-index: 1;
     }
 
     ul li a::before
@@ -80,6 +85,7 @@
 </head>
 <body>
   <ul class="centered-list" id="myList">
+    <li><a href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
     <li><a href="PDAhtml/PDA/Food.java"><span>Food.java</span></a></li>
     <li><a href="PDAhtml/PDA/Item.java"><span>Item.java</span></a></li>
     <li><a href="PDAhtml/PDA/Drink.java"><span>Drink.java</span></a></li>
@@ -92,6 +98,7 @@
     <li><a href="PDAhtml/PDA/OrderListFrame.java"><span>OrderListFrame.java</span></a></li>
     <li><a href="PDAhtml/PDA/OrderTest.java"><span>OrderTest.java</span></a></li>
     <li><a href="PDAhtml/PDA/Pract.java"><span>Pract.java</span></a></li>
+    <li><a href="PDAhtml/PDA/PDA.java"><span>PDA.java (main)</span></a></li>
   </ul>
 </body>
 </html>
