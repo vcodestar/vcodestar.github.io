@@ -1,46 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered List with Overflow-y Auto</title>
   <style>
     body {
+      left: 0;
+      margin: 0;
+      padding: 0; /* Reset padding for the body */
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: flex-start;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
+      min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+      background-color: #111;
+      overflow-x: hidden; /* Hide horizontal overflow */
     }
-    
-    .list {
-      width: 300px;
-      max-width: 90%;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-    
+
     ul {
-      padding: 0;
-      margin: 0;
-      list-style-type: none;
+      display: table;
+      margin: 0 auto;
+      list-style: none;
     }
-    
-    li {
-      margin-bottom: 10px;
+
+    /* Style the links inside the list to look like buttons */
+    ul li a {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add hover effect to the buttons */
+    ul li a:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
-  <div class="list">
-    <ul>
-      <li>List Item 1</li>
-      <li>List Item 2</li>
-      <li>List Item 3</li>
-      <li>List Item 1</li>
-      <li>List Item 2</li>
-      <li>List Item 3</li>
-      <!-- Add more list items as needed -->
-    </ul>
-  </div>
+  <ul class="centered-list" id="myList">
+    <li><a href="PDAhtml/PDA/Food.java">Food.java</a></li>
+    <li><a href="PDAhtml/PDA/Item.java">Item.java</a></li>
+    <li><a href="PDAhtml/PDA/Drink.java">Drink.java</a></li>
+    <li><a href="PDAhtml/PDA/Menu.java">Menu.java</a></li>
+    <li><a href="PDAhtml/PDA/Cart.java">Cart.java</a></li>
+    <li><a href="PDAhtml/PDA/Order.java">Order.java</a></li>
+    <li><a href="PDAhtml/PDA/CatMenu.java">CatMenu.java</a></li>
+    <li><a href="PDAhtml/PDA/CommentFrame.java">CommentFrame.java</a></li>
+    <li><a href="PDAhtml/PDA/OrderBtn.java">OrderBtn.java</a></li>
+    <li><a href="PDAhtml/PDA/OrderListFrame.java">OrderListFrame.java</a></li>
+    <li><a href="PDAhtml/PDA/OrderTest.java">OrderTest.java</a></li>
+    <li><a href="PDAhtml/PDA/Pract.java">Pract.java</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+  </ul>
 </body>
 </html>
