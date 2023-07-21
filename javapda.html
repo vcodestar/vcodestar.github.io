@@ -1,69 +1,97 @@
 <!DOCTYPE html>
-<html>
-<title>VC</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="W3S.css">
-<link rel="stylesheet" href="style1.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/967252b7d1.js" crossorigin="anonymous"></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered List with Overflow-y Auto</title>
+  <style>
+    body {
+      left: 0;
+      margin: 0;
+      padding: 0; /* Reset padding for the body */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+      background-color: #111;
+      overflow-x: hidden; /* Hide horizontal overflow */
+    }
+
+    ul {
+      padding: 0px;
+      display: table;
+      margin: 0 auto;
+      list-style: none;
+    }
+
+    /* Style the links inside the list to look like buttons */
+    ul li a {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    ul li a span
+    {
+      position: relative;
+    }
+
+    ul li a::before
+    {
+      content: '';
+      inset: 1px;
+      border-radius: 9px;
+      position: absolute;
+      background: #272727;
+      transition: 0.5s;
+    }
+
+    a:hover::before
+    {
+      opacity: 0.7;
+    }
+
+    a::after
+    {
+      content: '';
+      position: absolute;
+      inset: 0px;
+      background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+      border-radius: 9px;
+      transition: 0.5s;
+      opacity: 0;
+      filter: blur(20px);
+    }
+
+    a:hover::after
+    {
+      opacity: 1;
+    }
+
+  </style>
+</head>
 <body>
-
-<div class="sidebar" id="sidebar">
-  <button id="toggleButton" onclick="toggleSidebar()">
-    <i class="fa fa-caret-right"></i>
-  </button>
-
-
-  <div class="dropdown">
-    <a href="index.html" class="home-btn"><i class="fa fa-home" aria-hidden="true"></i></a>
-    <div class="free-content">
-      <a href="PDAhtml/PDA/Food.java" class="free-content-button">Food.java</a> 
-      <a href="PDAhtml/PDA/Item.java" class="free-content-button">Item.java</a> 
-      <a href="PDAhtml/PDA/Drink.java" class="free-content-button">Drink.java</a> 
-      <a href="PDAhtml/PDA/Menu.java" class="free-content-button">Menu.java</a> 
-      <a href="PDAhtml/PDA/Cart.java" class="free-content-button">Cart.java</a> 
-      <a href="PDAhtml/PDA/Order.java" class="free-content-button">Order.java</a> 
-      <a href="PDAhtml/PDA/CatMenu.java" class="free-content-button">CatMenu.java</a> 
-      <a href="PDAhtml/PDA/CommentFrame.java" class="free-content-button">CommentFrame.java</a> 
-      <a href="PDAhtml/PDA/OrderBtn.java" class="free-content-button">OrderBtn.java</a> 
-      <a href="PDAhtml/PDA/OrderListFrame.java" class="free-content-button">OrderListFrame.java</a> 
-      <a href="PDAhtml/PDA/OrderTest.java" class="free-content-button">OrderTest.java</a> 
-      <a href="PDAhtml/PDA/Pract.java" class="free-content-button">Pract.java</a> 
-      <a href="PDAhtml/PDA/PDA.java" class="free-content-button">PDA.java(main)</a>
-
-    </div>
-  </div>
-
-  </div>
-  
-      
-<div>
-    <footer>
-        <!---<a href="#"><i class="fab fa-facebook"></i></a>-->
-        <a href="https://www.linkedin.com/in/evangelos-chasanis-708610280/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/vcodestar"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/chasanis_/"><i class="fab fa-instagram"></i></a>
-        <!--<a href="#"><i class="fas fa-info"></i></a>
-        <a href="#"><i class="fas fa-share-alt"></i></a>-->
-        <!--<i class="fa fa-apple"></i>-->
-    </footer>
-</div>
-
-<script src="script1.js"></script>
-
+  <ul class="centered-list" id="myList">
+    <li><a href="PDAhtml/PDA/Food.java"><span>Food.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Item.java"><span>Item.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Drink.java"><span>Drink.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Menu.java"><span>Menu.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Cart.java"><span>Cart.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Order.java"><span>Order.java</span></a></li>
+    <li><a href="PDAhtml/PDA/CatMenu.java"><span>CatMenu.java</span></a></li>
+    <li><a href="PDAhtml/PDA/CommentFrame.java"><span>CommentFrame.java</span></a></li>
+    <li><a href="PDAhtml/PDA/OrderBtn.java"><span>OrderBtn.java</span></a></li>
+    <li><a href="PDAhtml/PDA/OrderListFrame.java"><span>OrderListFrame.java</span></a></li>
+    <li><a href="PDAhtml/PDA/OrderTest.java"><span>OrderTest.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Pract.java"><span>Pract.java</span></a></li>
+  </ul>
 </body>
 </html>
-
-
-                
-        

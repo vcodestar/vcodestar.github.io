@@ -18,6 +18,7 @@
     }
 
     ul {
+      padding: 0px;
       display: table;
       margin: 0 auto;
       list-style: none;
@@ -25,52 +26,72 @@
 
     /* Style the links inside the list to look like buttons */
     ul li a {
+      position: relative;
       display: block;
       width: 100%;
       padding: 10px;
-      margin: 5px 0;
+      margin: 10px 0;
       text-align: center;
       text-decoration: none;
       color: #fff;
-      background-color: #4CAF50;
-      border: none;
-      border-radius: 5px;
+      background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+      border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
-    /* Add hover effect to the buttons */
-    ul li a:hover {
-      background-color: #45a049;
+    ul li a span
+    {
+      position: relative;
     }
+
+    ul li a::before
+    {
+      content: '';
+      inset: 1px;
+      border-radius: 9px;
+      position: absolute;
+      background: #272727;
+      transition: 0.5s;
+    }
+
+    a:hover::before
+    {
+      opacity: 0.7;
+    }
+
+    a::after
+    {
+      content: '';
+      position: absolute;
+      inset: 0px;
+      background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+      border-radius: 9px;
+      transition: 0.5s;
+      opacity: 0;
+      filter: blur(20px);
+    }
+
+    a:hover::after
+    {
+      opacity: 1;
+    }
+
   </style>
 </head>
 <body>
   <ul class="centered-list" id="myList">
-    <li><a href="PDAhtml/PDA/Food.java">Food.java</a></li>
-    <li><a href="PDAhtml/PDA/Item.java">Item.java</a></li>
-    <li><a href="PDAhtml/PDA/Drink.java">Drink.java</a></li>
-    <li><a href="PDAhtml/PDA/Menu.java">Menu.java</a></li>
-    <li><a href="PDAhtml/PDA/Cart.java">Cart.java</a></li>
-    <li><a href="PDAhtml/PDA/Order.java">Order.java</a></li>
-    <li><a href="PDAhtml/PDA/CatMenu.java">CatMenu.java</a></li>
-    <li><a href="PDAhtml/PDA/CommentFrame.java">CommentFrame.java</a></li>
-    <li><a href="PDAhtml/PDA/OrderBtn.java">OrderBtn.java</a></li>
-    <li><a href="PDAhtml/PDA/OrderListFrame.java">OrderListFrame.java</a></li>
-    <li><a href="PDAhtml/PDA/OrderTest.java">OrderTest.java</a></li>
-    <li><a href="PDAhtml/PDA/Pract.java">Pract.java</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
-    <li><a href="PDAhtml/PDA/PDA.java">PDA.java (main)</a></li>
+    <li><a href="PDAhtml/PDA/Food.java"><span>Food.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Item.java"><span>Item.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Drink.java"><span>Drink.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Menu.java"><span>Menu.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Cart.java"><span>Cart.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Order.java"><span>Order.java</span></a></li>
+    <li><a href="PDAhtml/PDA/CatMenu.java"><span>CatMenu.java</span></a></li>
+    <li><a href="PDAhtml/PDA/CommentFrame.java"><span>CommentFrame.java</span></a></li>
+    <li><a href="PDAhtml/PDA/OrderBtn.java"><span>OrderBtn.java</span></a></li>
+    <li><a href="PDAhtml/PDA/OrderListFrame.java"><span>OrderListFrame.java</span></a></li>
+    <li><a href="PDAhtml/PDA/OrderTest.java"><span>OrderTest.java</span></a></li>
+    <li><a href="PDAhtml/PDA/Pract.java"><span>Pract.java</span></a></li>
   </ul>
 </body>
 </html>
