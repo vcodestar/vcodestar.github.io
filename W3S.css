@@ -7,29 +7,61 @@
 body{
     display: flex;
     min-height: 100vh;
-    
+    background: #09111d;
+    overflow: hidden;
 }
 
-body::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,#212121,#212121 50%,#323232,#323232 50%);
+.particles
+{
+    left: 6%;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
 }
 
-body::after{
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(160deg,#1DA1F2,#1DA1F2 50%,transparent,transparent 50%);
-    animation:animate5 5s ease-in-out infinite;
+.particles span
+{
+    position: relative;
+    bottom: 30px;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    -100px 0 #4fc3dc99,
+    100px 0 #ff2d7599;
+    margin: 0 4px;
+    border-radius: 50%;
+    animation: animate 15s ease infinite;
+    animation-duration: calc(125s / var(--i));
 }
+
+.particles span:nth-child(even)
+{
+    background: #ff2d7599;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    -100px 0 #4fc3dc99,
+    100px 0 #4fc3dc99;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(120vh) scale(0) rotate(0deg);
+    }
+    20%
+    {
+        transform: translateY(100vh) scale(1) rotate(0deg);
+    }
+    100%
+    {
+        transform: translateY(-50vh) scale(0.5) rotate(360deg);
+    }
+}
+
 footer img{
     width: 50px;
     height: 50px;
@@ -104,44 +136,3 @@ li a i{
     }
 }
 
-@media screen and (max-width: 300px) {
-    .w3-sidebar {
-      width: 40%;
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    .w3-sidebar {
-      width: 20%;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .w3-sidebar {
-        width: 40% !important;
-  overflow-x : scroll;
-    }
-
-}
-@media screen and (mix-width: 600px) {
-.w3-sidebar {
-  width: 40% !important;
-  overflow-x : scroll;
-    }
-
-}
-
-@media screen and (min-width: 700px) {
-.w3-sidebar {
-  width: 20% !important;
-  overflow-x : scroll;
-    }
-
-}
-
-@media screen and (min-width: 1000px) {
-.w3-sidebar {
-  width: 20% !important;
-  overflow-x : scroll;
-    }
-}

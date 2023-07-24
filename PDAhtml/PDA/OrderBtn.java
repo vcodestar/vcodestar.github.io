@@ -7,7 +7,7 @@ import java.util.*;
 public class OrderBtn extends JFrame implements ActionListener {
     
     int table=0;
-    OrderTest OT=new OrderTest();
+   // OrderTest OT=new OrderTest();
     Order order=new Order(table);
     Scanner scanner=new Scanner(System.in);
 
@@ -69,7 +69,7 @@ public class OrderBtn extends JFrame implements ActionListener {
 		if(e.getSource()==button) {
 			System.out.println("foo");
 			button.setEnabled(false);
-            OrderTest.main(null);
+            //OrderTest.main(null);
 			label.setVisible(true);
 		}	
         if(e.getSource()==button2) {

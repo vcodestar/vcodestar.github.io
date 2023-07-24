@@ -22,7 +22,7 @@ public class Pract extends JFrame implements ActionListener {
         label.setBounds(150,250,150,150);
         label.setVisible(true);
 
-
+        this.setTitle("VCSoftware LLC");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setSize(1000,1000);
