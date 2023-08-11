@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int alreadyInString(char ch, char *str);
+
+int main() {
+
+    char *strng = "Hello VC";
+    char c = 'V';
+
+    char *tmp = malloc(strlen(strng) + 1);
+    int i = 0; // Index variable for tmp array
+    int count = 0;
+    int maxCoutnt = 0;
+
+
+    while (!alreadyInString(*(strng + 0), tmp)) {
+        tmp[i++] = *strng++;
+        count ++;
+    }
+    tmp[i] = '\0'; // Null-terminate the tmp array
+
+    printf("\nString: %s ", tmp);
+    printf("\nCount : %d", count);
+
+    int tf = alreadyInString(c, tmp);
+
+    printf("\nIn string: %d ", tf);
+
+    free(tmp); // Free the allocated memory
+
+    return 0;
+}
+
+int alreadyInString(char ch, char *str) {
+    while (*str != '\0') {
+        if (ch == *str)
+            return 1; // Character found, return true
+        str++;
+    }
+    return 0; // Character not found, return false
+}
+
+int makeSub()
+{
+
+}
