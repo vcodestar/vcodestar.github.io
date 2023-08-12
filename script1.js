@@ -9,8 +9,20 @@ var dropdownButtons = document.querySelectorAll('.dropdown-btn');
 dropdownButtons.forEach(function(button) {
   button.addEventListener('click', function() {
     var dropdown = this.parentNode;
-    dropdown.classList.toggle('show');
     var icon = this.querySelector('i');
+
+    // Close all open dropdowns except the clicked one
+    dropdownButtons.forEach(function(otherButton) {
+      if (otherButton !== button) {
+        var otherDropdown = otherButton.parentNode;
+        otherDropdown.classList.remove('show');
+        var otherIcon = otherButton.querySelector('i');
+        otherIcon.classList.remove('fa-caret-up');
+      }
+    });
+
+    // Toggle the clicked dropdown
+    dropdown.classList.toggle('show');
     icon.classList.toggle('fa-caret-up');
   });
 });
