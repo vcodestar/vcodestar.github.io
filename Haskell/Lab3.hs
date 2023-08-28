@@ -3,6 +3,8 @@
 
 -- ASKHSH 1
 
+-- make a list of words given a string
+-- a word consists of consecutive letters only
 
 wordList :: String->[String]
 wordList s 
@@ -44,6 +46,8 @@ loga a = \x -> log x / log a
 -----------------------------------------------------------------------------------------
      
 -- ASKHSH 2
+
+-- given a list of positions, make the robot visit each position moving only horizontally and vertically and then return to base
 
 trace :: [(Int,Int)]->[(Int,Int)]
 trace s=traceCalled s 0
