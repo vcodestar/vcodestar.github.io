@@ -75,7 +75,7 @@ footer{
     display: flex;
     background-color: transparent;
     left: 0px;
-    bottom: 0px;
+    bottom: 0%;
     width: 100%;
     justify-content: center;
     align-items: center;
