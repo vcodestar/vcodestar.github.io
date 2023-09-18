@@ -48,7 +48,7 @@
 #toggleButton {
   position: fixed;
   left: 0;
-  width: 20px;
+  width: 1.5%;
   border: none;
   z-index: 90000000;
   /* Add the following lines to ensure the button stays on top */
