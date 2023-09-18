@@ -47,7 +47,7 @@
 
 #toggleButton {
   position: fixed;
-  left: 0;
+  left: 0%;
   width: 20px;
   border: none;
   z-index: 90000001;
