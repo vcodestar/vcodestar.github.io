@@ -22,8 +22,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: auto;/**/
+  overflow-y: auto;
 }
+/**/
 
 .sidebar ul {
   list-style-type: none;
