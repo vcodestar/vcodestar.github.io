@@ -50,6 +50,7 @@
 
 #toggleButton {
   position: fixed;
+  border: none;
   top: 0%;
   left: 0px;
   width: 40px;
@@ -65,7 +66,6 @@
     color: white;
     height: 100%; /* change to 30. */
     top: 0; /* change to 35 .*/
-    left: 40%;
   }
   
   .class2 {
