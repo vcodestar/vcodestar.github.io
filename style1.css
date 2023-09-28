@@ -50,13 +50,15 @@
 
 #toggleButton {
   position: fixed;
-  left: 0%;
-  width: 20px;
-  border: none;
-  z-index: 90000001;
-  /* Add the following lines to ensure the button stays on top */
-  transform: translateZ(1px);
-  transform: translate3d(0, 0, 1px);
+  top: 0%;
+  left: 0px;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
   
   .class1 {

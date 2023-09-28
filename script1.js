@@ -46,11 +46,11 @@ function toggleSidebar() {
 
 tgl.addEventListener("click", function() {
   if (isClass1) {
-    tgl.innerHTML = '<i class="fa fa-caret-right"></i>';
+    tgl.innerHTML = '<i class="fa-solid fa-list"></i>';
     tgl.classList.remove("class2");
     tgl.classList.add("class1");
   } else {
-    tgl.innerHTML = '<i class="fa fa-caret-left"></i>';
+    tgl.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     tgl.classList.remove("class1");
     tgl.classList.add("class2");
   }
