@@ -61,8 +61,9 @@
   
   .class1 {
     color: white;
-    height: 30%;
-    top: 35%
+    height: 100%;
+    top: 0;
+    left: 40%;
   }
   
   .class2 {
