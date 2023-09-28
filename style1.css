@@ -50,6 +50,7 @@
 
 #toggleButton {
   position: absolute;
+  color: #f1f1f1;
   border: none;
   top: 20px;
   right: 20px;
