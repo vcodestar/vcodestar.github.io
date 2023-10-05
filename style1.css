@@ -9,6 +9,10 @@
   font-weight: bold; /* Optional: Adjust the font weight */
 }
 
+.icon
+{
+  color: white;
+}
 
 .sidebar {
   position: fixed;
@@ -50,7 +54,7 @@
 
 #toggleButton {
   position: absolute;
-  color: #f1f1f1;
+  background-color: transparent;
   border: none;
   top: 20px;
   right: 20px;
@@ -71,7 +75,7 @@
   }
   
   .class2 {
-    color: black;
+    color: white;
     height: 100%;
     top: 0;
   }
