@@ -24,6 +24,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 9998;
 }
 
 .signup-button {
