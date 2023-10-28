@@ -12,10 +12,11 @@ function sendmail() {
         var contactParams = {
             
             from_name: fullName,
-            from_email: userEmail,
+            to_email: userEmail,
             message: userMessage
             
         };
 
+        console.log("Sending email to :", contactParams.to_email);
         emailjs.send('service_vc4real', 'template_bea9gba', contactParams).then(function (res) {})
 }
