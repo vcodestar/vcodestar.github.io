@@ -14,6 +14,18 @@
   color: white;
 }
 
+.login-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #e91e63;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .sidebar {
   position: fixed;
   left: -100%;
