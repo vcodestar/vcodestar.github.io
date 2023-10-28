@@ -13,7 +13,7 @@
 {
   color: white;
 }
-
+/*///////////////////////////////////////////////////////////////////*/
 .login-button {
   position: absolute;
   top: 20px;
@@ -25,6 +25,20 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.signup-button {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  background-color: #4fc3dc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100000000000;
+}
+
 
 .sidebar {
   position: fixed;
