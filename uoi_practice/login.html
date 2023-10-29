@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="script.js"></script>
     <title>Reset Password</title>
 </head>
 <body>
@@ -13,13 +12,27 @@
         <div class="login">
             <h2>Reset Password</h2>
             <div class="inputBox">
-                <input type="text" id="to_email" placeholder="e.g. cs05058@uoi,gr">
+                <div class="inputBox">
+                    <input type="text" id="name" name="fullName" placeholder="e.g. Vaggelis Chasanis">
+                </div>
+                <input type="text" id="email" name="email" placeholder="e.g. cs05058@uoi.gr">
             </div>
+            <label for="message">Message :</label>
+            <textarea class="form-control textarea" id="message" rows="3" placeholder="Your message..."></textarea>
             <div class="inputBox">
-                <input type="submit" onclick="sendEmail()" value="Reset Password" id="btn">
+                <input type="submit" onclick="sendmail()" value="Reset Password" id="btn">
             </div>
+
         </div>
     </section>
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- Check main.js for sendmail function -->
+    <script type="text/javascript" src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+    </script>
 </body>
 </html>

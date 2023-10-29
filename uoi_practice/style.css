@@ -1,13 +1,11 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-section
-{
+section {
     position: relative;
     display: flex;
     justify-content: center;
@@ -17,8 +15,7 @@ section
     overflow: hidden;
 }
 
-section .bg
-{
+section .bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,26 +24,22 @@ section .bg
     object-fit: cover;
 }
 
-.login
-{
+.login {
     position: relative;
     color: aliceblue;
     padding: 60px;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(15px);
     border: none;
-    /*border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.5);*/
     border-radius: 20px;
     width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px; /* Increased the gap between elements to 20px */
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
 
-.login h2
-{
+.login h2 {
     position: relative;
     width: 100%;
     text-align: center;
@@ -55,13 +48,11 @@ section .bg
     margin-bottom: 10px;
 }
 
-.login .inputBox
-{
+.login .inputBox {
     position: relative;
 }
 
-.login .inputBox input
-{
+.login .inputBox input {
     position: relative;
     width: 100%;
     padding: 15px 20px;
@@ -72,8 +63,12 @@ section .bg
     border: none;
 }
 
-.login .inputBox #btn
-{
+/* Add margin to the Email input */
+.login .inputBox input#email {
+    margin-top: 10px; /* Adjust the margin value to control the spacing */
+}
+
+.login .inputBox #btn {
     position: relative;
     border: none;
     outline: none;
@@ -85,7 +80,6 @@ section .bg
     cursor: pointer;
 }
 
-.login .inputBox #btn:hover
-{
+.login .inputBox #btn:hover {
     background: #4fc3dc99;
 }
