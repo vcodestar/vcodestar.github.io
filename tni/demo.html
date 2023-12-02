@@ -1,17 +1,58 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="W3S.css">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
     body {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       background-color: #000; /* Dark background color */
+      margin: 0; /* Remove default margin */
+    }
+
+    #container {
+      position: relative;
+    }
+
+    #homeButton {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      padding: 15px; /* Increased padding */
+      background-color: #fff; /* Button background color */
+      color: #000; /* Button text color */
+      text-decoration: none; /* Remove underline for links */
+      border-radius: 8px; /* Slightly increased border-radius for rounded corners */
+      width: 50px; /* Increased width */
+      height: 50px; /* Increased height */
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+    }
+
+    #videoContainer {
+      margin-top: 30px; /* Adjusted margin for the video container */
     }
   </style>
-  
-  <div>
-    <video width="640" height="480" controls>
-      <source src="TNI_video.mp4">
-      Your browser does not support the video tag.
-    </video>
+</head>
+<body>
+  <div id="container">
+    <a href="../index.html" id="homeButton"><i class="fa fa-home" style="font-size: 24px;"></i></a>
+    <div id="videoContainer">
+      <video width="640" height="480" controls>
+        <source src="TNI_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
-  
+</body>
+</html>
