@@ -65,3 +65,32 @@ function downloadZip() {
     window.open(zipFileUrl, '_blank');
 }
 
+// script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  let isAlternateColor = false; // Variable to track the color switch
+
+  document.addEventListener('click', function (event) {
+    // Create a div for the click effect
+    const clickEffect = document.createElement('div');
+    clickEffect.className = 'click-effect';
+
+    // Toggle between colors
+    clickEffect.style.backgroundColor = isAlternateColor ? '#e91e63' : '#4fc3dc';
+    isAlternateColor = !isAlternateColor; // Toggle the variable for the next click
+
+    // Set the position of the click effect to the cursor position
+    clickEffect.style.left = event.clientX + 'px';
+    clickEffect.style.top = event.clientY + 'px';
+
+    // Append the click effect to the body
+    document.body.appendChild(clickEffect);
+
+    // Remove the click effect after the animation finishes
+    setTimeout(() => {
+      clickEffect.remove();
+    }, 500);
+  });
+});
+
+
