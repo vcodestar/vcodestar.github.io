@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Reset Password</title>
+    <script src="https://kit.fontawesome.com/967252b7d1.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <title>Feedback</title>
 </head>
 <body>
     <section>
         <img src="1435.jpg" class="bg"></img>
         <div class="login">
-            <h2>Reset Password</h2>
+            <!-- Add homeButton next to the heading -->
+            <h2><a href="../index.html" id="homeButton"><i class="fa fa-home"></i></a>Feedback</h2>
             <div class="inputBox">
                 <div class="inputBox">
                     <input type="text" id="name" name="fullName" placeholder="e.g. Vaggelis Chasanis">
@@ -20,8 +28,8 @@
             <label for="message">Message :</label>
             <textarea class="form-control textarea" id="message" rows="3" placeholder="Your message..."></textarea>
             <div class="inputBox">
-                <p id="successMessage" style="display: none">Your request was sent successfully</p>
-                <input type="submit" onclick="sendmail()" value="Reset Password" id="btn">
+                <p id="successMessage" style="display: none">Your feedback was sent successfully</p>
+                <input type="submit" onclick="sendmail()" value="Send Feedback" id="btn">
             </div>
 
         </div>

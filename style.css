@@ -10,6 +10,13 @@ body{
  
 }
 
+#homeButton {
+    position: absolute; /* or absolute, depending on your layout needs */
+    z-index: 100000;
+    top: 100px;
+    left: 120px;
+}
+
 nav{
     /*display:flex;
     justify-content: center;
