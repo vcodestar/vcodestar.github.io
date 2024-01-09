@@ -1,6 +1,7 @@
 var sidebar = document.getElementById('sidebar');
 var opn = false;
 var tgl = document.getElementById("toggleButton");
+var tg2 = document.getElementById("certificationButton");
 var isClass1 = false;
 tgl.classList.add("class1");
 
@@ -48,10 +49,14 @@ tgl.addEventListener("click", function() {
   if (isClass1) {
     tgl.innerHTML = '<i class="fa-solid fa-list icon"></i>';
     tgl.classList.remove("class2");
+    tg2.style.pointerEvents = 'auto';
+    tg2.innerHTML = '<i class="fa-solid fa-award icon"></i>';
     tgl.classList.add("class1");
   } else {
     tgl.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     tgl.classList.remove("class1");
+    tg2.style.pointerEvents = 'none'; // Disable pointer events
+    tg2.innerHTML = '';
     tgl.classList.add("class2");
   }
   isClass1 = !isClass1;
