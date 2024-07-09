@@ -61,8 +61,14 @@ input:focus {
 }
 
 #description {
-    color: #fd5c63;
+    color: white;
+    background: #fd5c63;
     font-size: 22px;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    justify-content: center;
+    display: flex;
 }
 
 #name, #email {
