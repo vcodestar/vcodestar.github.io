@@ -18,6 +18,7 @@ body {
 
 header {
     padding-left: 5px;
+    /* font-size: ; */
 }
 
 .nav-link {
@@ -47,8 +48,18 @@ nav a {
 }
 
 @media (max-width: 600px) {
+    body {
+        color: white;
+        background-color: #0e79b2;
+    }
+    header {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 1.7vh;
+    }
+    
     #navbar {
-        width: 100px;
+        width: 110px;
     }
     .main-section {
         margin-left: 120px;
@@ -57,7 +68,7 @@ nav a {
 
 @media screen and (min-width: 480px) {
     body {
-        color: white;;
+        color: white;
         background-color: #0e79b2;
     }
 }
