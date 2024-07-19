@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/powerful-integers/description/
+
 // used in built-in qsort() function
 int compare(const void* a, const void* b) {
     return (*(int*)a - *(int*)b);
