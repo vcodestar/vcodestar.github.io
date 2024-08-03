@@ -107,6 +107,22 @@ div footer a:hover{
     
 }
 
+#linkedin:hover {
+    color: #0077B5;;
+}
+
+#github:hover {
+    color: #6e5494;
+}
+
+#instagram:hover {
+    background: linear-gradient(45deg, rgb(255, 0, 130), rgb(245, 96, 64), rgb(255, 153, 0), rgb(255, 222, 89), rgb(131, 58, 180));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 i{
     color: black;
 }
