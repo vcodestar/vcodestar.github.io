@@ -88,12 +88,13 @@ div footer a{
     width: 50px;
     height: 110px;
     padding: 5px;
-    
-    
 }
 
 footer i{
     color: white;
+    height: 100px;
+    width: 30px;
+    margin: 5px;
 }
 
 div footer a:hover{
@@ -108,7 +109,7 @@ div footer a:hover{
 }
 
 #linkedin:hover {
-    color: #0077B5;;
+    color: #0077B5;
 }
 
 #github:hover {
