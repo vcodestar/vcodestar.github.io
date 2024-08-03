@@ -102,7 +102,7 @@ div footer a:hover{
     height:110px;
     display: block;
     transform:translateY(-20px);
-    /*animation:animate3  ease-in-out 3s 1;*/
+    animation:animate3  ease-in-out 2s 1;
     
     
 }
@@ -120,7 +120,7 @@ li a i{
         transform: translateY(0);
     }
     100%{
-        transform: translateY(-100px);
+        transform: translateY(-20px);
     }
 }
 
