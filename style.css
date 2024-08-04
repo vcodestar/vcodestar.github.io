@@ -110,6 +110,7 @@ nav ul li ul li a:hover{
 }
 
 .loader span {
+    z-index: 2000000000000000000000000;
     position:absolute;
     width: 100%;
     height: 100%;
