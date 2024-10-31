@@ -1,0 +1,126 @@
+* {
+    background-color: #252526;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    color: white;
+    background-color: #1e1e1e;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    height: 10vh;
+    font-size: 1.4rem;
+    position: fixed;
+    top: 0;
+}
+
+#v {
+    color: #00E1FD;
+}
+
+#c {
+    color: #FC007A;
+}
+
+#main-div {
+    border: 1px solid red;
+    margin-top: 2vh;
+    width: 65%;
+    height: 60%;
+    padding: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.text-column {
+    border: 1px solid blue;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Aligns content vertically */
+    padding: 10px;
+    overflow-y: hidden; /* Only .content should scroll */
+}
+
+.content {
+    overflow-y: auto; /* Enables scrolling within this section */
+    max-height: 100%; /* Ensures content stays within column */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Scrollbar styling for Webkit-based browsers (Chrome, Safari, Edge) */
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: #252526;
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #252526;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.image-column {
+    flex: 1;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: contains;
+    border-radius: 20px;
+}
+
+.navigation {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navigation button {
+    flex: 1;
+    padding: 1vh 3vw;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation button:hover {
+    background-color: #45a049;
+}
