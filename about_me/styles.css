@@ -37,7 +37,7 @@ header {
 }
 
 #main-div {
-    border: 1px solid rgba(156, 39, 176, 0.5); /* Light purple border */
+    position: relative; /* Ensure pseudo-elements position correctly */
     margin-top: 2vh;
     width: 65%;
     height: 60%;
@@ -45,9 +45,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    overflow: hidden; /* Hide overflow */
 }
 
 .text-column {
@@ -98,10 +98,13 @@ header {
 }
 
 .image-column img {
-    width: 100%;
+    width: 60%;
     height: 100%;
     object-fit: contain; /* Ensure the image fits properly */
     border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(156, 39, 176, 0.8),  /* Neon glow effect */
+                0 0 40px rgba(156, 39, 176, 0.6), 
+                0 0 60px rgba(156, 39, 176, 0.4); 
 }
 
 .navigation {
