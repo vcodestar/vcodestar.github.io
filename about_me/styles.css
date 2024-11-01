@@ -168,6 +168,7 @@ li {
     }
 
     .image-column img {
-        object-fit: scale-down; 
+        /* object-fit: scale-down;  */
+        object-fit: cover; 
     }
 }
