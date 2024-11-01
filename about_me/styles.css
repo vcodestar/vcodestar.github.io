@@ -41,6 +41,7 @@ header {
     margin-top: 10vh;
     width: 65%;
     height: 60%;
+    max-height: 80vh; /* Limit max-height to prevent overlap */
     padding: 3vh;
     display: flex;
     flex-direction: row;
@@ -49,8 +50,8 @@ header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden; 
     box-shadow: 0 0 20px rgba(156, 39, 176, 0.8),  
-    0 0 40px rgba(156, 39, 176, 0.6), 
-    0 0 60px rgba(156, 39, 176, 0.4); 
+                0 0 40px rgba(156, 39, 176, 0.6), 
+                0 0 60px rgba(156, 39, 176, 0.4); 
 }
 
 .text-column {
@@ -154,4 +155,22 @@ li {
     margin-bottom: 2vh;
     color: white; 
     font-size: 1.1rem; 
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #main-div {
+        width: 90%;        /* Reduce width on smaller screens */
+        height: auto;      /* Allow auto height to prevent overflow */
+        max-height: 70vh;  /* Limit max-height further for small screens */
+        flex-direction: column; /* Stack columns vertically */
+        margin-top: 12vh;  /* Slightly increase top margin */
+    }
+
+    .image-column img {
+        width: 80%; /* Increase image size relative to the smaller layout */
+        height: auto;
+        object-fit: contain; 
+        border-radius: 20px; 
+    }
 }
