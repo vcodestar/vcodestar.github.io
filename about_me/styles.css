@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 header {
@@ -37,7 +38,7 @@ header {
 
 #main-div {
     position: relative; 
-    margin-top: 17vh;
+    margin-top: 10vh;
     width: 65%;
     height: 60%;
     max-height: 80vh; /* Limit max-height to prevent overlap */
@@ -160,10 +161,11 @@ li {
 @media (max-width: 768px) {
     #main-div {
         width: 90%;        /* Reduce width on smaller screens */
-        height: auto;      /* Allow auto height to prevent overflow */
+        height: 40%;      /* Allow auto height to prevent overflow */
         max-height: 70vh;  /* Limit max-height further for small screens */
         flex-direction: column; /* Stack columns vertically */
         margin-top: 12vh;  /* Slightly increase top margin */
     }
+
 
 }
