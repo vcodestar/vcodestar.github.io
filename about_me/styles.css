@@ -10,7 +10,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
 }
 
 header {
@@ -38,7 +37,7 @@ header {
 
 #main-div {
     position: relative; 
-    margin-top: 10vh;
+    margin-top: 17vh;
     width: 65%;
     height: 60%;
     max-height: 80vh; /* Limit max-height to prevent overlap */
