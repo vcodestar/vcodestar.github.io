@@ -15,7 +15,7 @@ body {
 
 header {
     color: white;
-    background-color: #1e1e1e;
+    background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -38,20 +38,22 @@ header {
 
 #main-div {
     position: relative; 
-    margin-top: 2vh;
+    margin-top: 10vh;
     width: 65%;
     height: 60%;
-    padding: 1vh;
+    padding: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-radius: 10px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden; 
+    box-shadow: 0 0 20px rgba(156, 39, 176, 0.8),  
+    0 0 40px rgba(156, 39, 176, 0.6), 
+    0 0 60px rgba(156, 39, 176, 0.4); 
 }
 
 .text-column {
-    border: 1px solid rgba(156, 39, 176, 0.5); 
     color: white;
     flex: 1;
     display: flex;
@@ -100,15 +102,12 @@ header {
 .image-column img {
     width: 60%;
     height: 100%;
-    object-fit: contain; 
+    object-fit: cover; 
     border-radius: 20px; 
-    box-shadow: 0 0 20px rgba(156, 39, 176, 0.8),  
-                0 0 40px rgba(156, 39, 176, 0.6), 
-                0 0 60px rgba(156, 39, 176, 0.4); 
 }
 
 .navigation {
-    border: 1px solid rgba(156, 39, 176, 0.5); 
+    margin-top: 5vh;
     display: flex;
     justify-content: space-between;
     gap: 20px;
