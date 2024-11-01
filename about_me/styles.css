@@ -171,4 +171,8 @@ li {
         /* object-fit: scale-down;  */
         object-fit: cover; 
     }
+
+    #about {
+        margin-top: 1vh;
+    }
 }
