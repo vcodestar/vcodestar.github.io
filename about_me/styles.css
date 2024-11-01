@@ -167,5 +167,7 @@ li {
         margin-top: 12vh;  /* Slightly increase top margin */
     }
 
-
+    .image-column img {
+        object-fit: scale-down; 
+    }
 }
