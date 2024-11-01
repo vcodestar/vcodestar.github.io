@@ -167,10 +167,4 @@ li {
         margin-top: 12vh;  /* Slightly increase top margin */
     }
 
-    .image-column img {
-        width: 80%; /* Increase image size relative to the smaller layout */
-        height: auto;
-        object-fit: contain; 
-        border-radius: 20px; 
-    }
 }
