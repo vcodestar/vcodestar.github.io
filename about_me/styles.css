@@ -172,6 +172,10 @@ li {
         object-fit: cover; 
     }
 
+    .headerTitle {
+        margin: 0;
+    }
+
     #about {
         margin-top: 1vh;
     }
