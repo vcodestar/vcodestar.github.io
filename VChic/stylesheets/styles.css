@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    /* border: 1px solid red; */
+    background-color: #333;
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    padding: 2vh;
+}
+
+#logo {
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    flex: 0 0 10%; 
+}
+
+#my {
+    color: white;
+}
+
+#sports {
+    color: rgb(161, 12, 12);
+}
+
+#store {
+    color: rgb(9, 9, 116);
+}
+
+#search_bar_container {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    flex-grow: 1; 
+    justify-content: center; 
+}
+
+#search_bar {
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.5vh;
+    outline: none;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vh;
+    color: #fff;
+    flex: 0 0 10%; 
+}
+
+#menuButton {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+    color: white;
+}
+
+
+#main_body {
+    display: flex; 
+    width: 100%;
+    /* border: 1px solid blue;   */
+}
+
+.column {
+    padding: 10px; 
+}
+
+#column1 {
+    flex: 0 0 10%; 
+    background-color: #333; 
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    position: sticky; 
+    top: 0; 
+    height: 100vh;  
+}
+
+#column1 ul {
+    margin-top: 15vh;
+}
+
+#column1 li {
+    padding: 1vh;
+    transition: transform 0.2s ease; 
+}
+
+
+#column1 li:hover {
+    transform: scale(1.1); 
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.category-item {
+    cursor: pointer;
+    color: white;
+}
+
+#column2 {
+    flex: 0 0 80%; 
+    background-color: #666;
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.item_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vh;
+    margin: 3vh 0;
+}
+
+.item_card {
+    cursor: pointer;
+    padding: 2vh;
+    border: 1px solid orange;
+    border-radius: 20px;
+    min-height: fit-content;
+    max-height: 30vh;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_card img {
+    border-radius: 20px;
+}
+
+.item_title {
+    margin-top: 1.2vh;
+    color: white;
+}
+
+.item_price {
+    color: white;
+}
+
+#column3 {
+    flex: 0 0 10%; 
+    background-color: #333;  
+}
+
+footer {
+    /* border: 1px solid green; */
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+    margin-top: auto; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer span {
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+}
+
+footer span:hover {
+    transform: scale(1.1); 
+}
+
+#company_info {
+    display: flex;
+    width: fit-content;
+    margin: 2vh;
+    flex-wrap: wrap;
+    gap: 2vh; 
+}
+
+#no_results {
+    color: white;
+    margin-top: 5vh;
+}
+
+
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #icons {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: space-around;
+        background-color: #333;
+        padding: 1vh 0;
+        z-index: 10;
+    }
+
+    #column2 {
+        flex: 1;
+        border-radius: 0;
+    }
+
+    #column1,
+    #column3 {
+        display: none;
+    }
+
+    #menuButton {
+        display: block;
+        position: absolute;
+        top: 4vh;
+        left: 4vw;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        z-index: 15; 
+    }
+
+    #column1.overlay {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.95); 
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+        overflow-y: auto; 
+        padding-top: 15vh; 
+        z-index: 12;
+    }
+
+    #column1 ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    #column1 li {
+        margin: 2vh 0;
+        font-size: 1.5rem;
+    }
+
+    #menuButton i {
+        transition: transform 0.3s ease;
+    }
+    
+    .rotate {
+        transform: rotate(90deg);
+    }
+}

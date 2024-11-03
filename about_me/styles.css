@@ -167,6 +167,10 @@ li {
         margin-top: 12vh;  /* Slightly increase top margin */
     }
 
+    /* .text-column {
+        border: 1px solid #9C27B0;
+    } */
+
     .image-column img {
         /* object-fit: scale-down;  */
         object-fit: cover; 

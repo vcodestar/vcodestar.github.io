@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <a href="index.html"><span id="my">my</span><span id="sports">Sports</span><span id="store">Store</span></a>
+        </div>
+        <button id="menuButton">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="search_bar_container">
+            <input id="search_bar" type="text" placeholder="Search..." />
+            <i class="fas fa-search"></i> <!-- Search Icon -->       
+        </div>
+        <div id="icons">
+            <div id="user_profile"><i class="fas fa-user"></i></div>
+            <div id="wishlist"><i class="fas fa-heart"></i></div>
+            <div id="cart"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+    </div>
+    <div id="main_body">
+        <div class="column" id="column1">
+            <ul>
+                <li class="category-item" data-category="jackets">Jackets</li>
+                <li class="category-item" data-category="hoodies">Hoodies</li>
+                <li class="category-item" data-category="tshirts">T-Shirts</li>
+                <li class="category-item" data-category="tracksuits">Tracksuits</li>
+                <li class="category-item" data-category="shoes">Shoes</li>
+                <li class="category-item" data-category="accessories">Accessories</li>
+                <li class="category-item" data-category="shorts">Shorts</li>
+                <li class="category-item" data-category="socks">Socks</li>
+                <li class="category-item" data-category="sportswear">Sportswear</li>
+                <li class="category-item" data-category="swimwear">Swimwear</li>
+                <li class="category-item" data-category="hats">Hats & Caps</li>
+                <li class="category-item" data-category="gloves">Gloves</li>
+                <li class="category-item" data-category="belts">Belts</li>
+            </ul>
+        </div>        
+        <div class="column" id="column2">
+            <div class="item_container"></div>  
+        </div>
+        <div class="column" id="column3"></div>
+    </div>
+    <footer>
+        <div id="company_info">
+            <span id="about_us">About Us</span>
+            <span id="contact">Contact</span>
+            <span id="locations">Locations</span>
+        </div>
+        <div id="copyright">
+            <span>&copy; 2024 mySportsStore. All rights reserved.</span>
+        </div>
+    </footer>
+    <script type="module" src="/scripts/items.js"></script>
+    <script type="module" src="/scripts/script.js"></script>
+</body>
+</html>
