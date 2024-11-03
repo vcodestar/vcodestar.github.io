@@ -25,8 +25,9 @@ function showAllItems() {
         itemContainer.innerHTML += `
             <div class="item_card">
                 <img src="https://via.placeholder.com/200" alt="${item.category}">
-                <b class="item_title">${item.brand}</b>
-                <b class="item_price">Price: ${item.price}</b>
+                <span class="item_title">${item.brand}</span>
+                <span class="item_price">${item.price}</span>
+                <i class="fa-regular fa-heart" id="hearted"></i>
             </div>`;
     });
 }
@@ -39,8 +40,8 @@ function showItems(searchInput) {
             itemContainer.innerHTML += `
                 <div class="item_card">
                     <img src="https://via.placeholder.com/200" alt="${item.category}">
-                    <b class="item_title">${item.brand}</b>
-                    <b class="item_price">Price: ${item.price}</b>
+                    <span class="item_title">${item.brand}</span>
+                    <span class="item_price">${item.price}</span>
                 </div>`;
         }
     });
@@ -56,8 +57,8 @@ function loadCategoryItems(category) {
             itemContainer.innerHTML += `
                 <div class="item_card">
                     <img src="https://via.placeholder.com/200" alt="${item.category}">
-                    <b class="item_title">${item.brand}</b>
-                    <b class="item_price">Price: ${item.price}</b>
+                    <span class="item_title">${item.brand}</span>
+                    <span class="item_price">${item.price}</span>
                 </div>`;
         });
     } else {

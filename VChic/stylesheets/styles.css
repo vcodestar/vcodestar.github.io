@@ -6,14 +6,14 @@
 }
 
 body {
-    background-color: #333;
+    background-color: #111;
     display: flex;
     flex-direction: column;
 }
 
 #navbar {
     /* border: 1px solid red; */
-    background-color: #333;
+    background-color: #000;
     width: 100%;
     height: 9vh;
     display: flex;
@@ -34,7 +34,7 @@ body {
 }
 
 #sports {
-    color: rgb(161, 12, 12);
+    color: white;
 }
 
 #store {
@@ -91,17 +91,24 @@ i {
 
 #column1 {
     flex: 0 0 10%; 
-    background-color: #333; 
+    background-color: #fff; 
     display: flex;
     align-items: flex-start; 
     justify-content: center;
+    flex-direction: column;
     position: sticky; 
     top: 0; 
     height: 100vh;  
 }
 
+#categories_header {
+    margin-left: 3vh;
+    border-bottom: 2px solid black;
+}
+
 #column1 ul {
-    margin-top: 15vh;
+    margin-left: 3vh;
+    margin-bottom: 15vh;
 }
 
 #column1 li {
@@ -121,13 +128,13 @@ ul {
 
 .category-item {
     cursor: pointer;
-    color: white;
+    color: black;
 }
 
 #column2 {
     flex: 0 0 80%; 
-    background-color: #666;
-    border-radius: 20px; 
+    background-color: #fff;
+    /* border-radius: 20px;  */
     display: flex;
     justify-content: center;
     min-height: 80vh;
@@ -144,38 +151,45 @@ ul {
 .item_card {
     cursor: pointer;
     padding: 2vh;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     border-radius: 20px;
     min-height: fit-content;
     max-height: 30vh;
     width: fit-content;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
 }
 
 .item_card img {
     border-radius: 20px;
 }
 
-.item_title {
+.item_title, .item_price {
+    width: 100%; 
+    text-align: left; 
     margin-top: 1.2vh;
-    color: white;
-}
-
-.item_price {
-    color: white;
 }
 
 #column3 {
     flex: 0 0 10%; 
-    background-color: #333;  
+    background-color: #fff;  
+}
+
+#hearted {
+    color: gray; 
+    cursor: pointer; 
+    position: absolute; 
+    bottom: 3.5vh; 
+    right: 3.5vh; 
+    font-size: 1.3rem;
 }
 
 footer {
     /* border: 1px solid green; */
-    background-color: #333;
+    background-color: #c5c4c4;
     width: 100%;
     padding: 10px;
     margin-top: auto; 
@@ -187,7 +201,7 @@ footer {
 }
 
 footer span {
-    color: white;
+    color: rgb(71, 71, 71);
     cursor: pointer;
     transition: transform 0.2s ease; 
 }
@@ -202,6 +216,10 @@ footer span:hover {
     margin: 2vh;
     flex-wrap: wrap;
     gap: 2vh; 
+}
+
+#copyright {
+    margin-bottom: 5vh;
 }
 
 #no_results {
@@ -222,7 +240,7 @@ footer span:hover {
         left: 0;
         width: 100%;
         justify-content: space-around;
-        background-color: #333;
+        background-color: #111;
         padding: 1vh 0;
         z-index: 10;
     }
@@ -250,6 +268,10 @@ footer span:hover {
         z-index: 15; 
     }
 
+    #categories_header {
+        display: none;
+    }
+
     #column1.overlay {
         display: flex;
         position: fixed;
@@ -268,6 +290,7 @@ footer span:hover {
     }
 
     #column1 ul {
+        color: white;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -276,6 +299,7 @@ footer span:hover {
     }
 
     #column1 li {
+        color: white;
         margin: 2vh 0;
         font-size: 1.5rem;
     }
