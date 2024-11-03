@@ -103,4 +103,10 @@ document.addEventListener("DOMContentLoaded", () => {
             loadCategoryItems(category); 
         });
     });
+
+    document.getElementById('bottom_search').addEventListener('click', function() {
+        const navbar = document.getElementById('navbar');
+        navbar.scrollIntoView({ behavior: 'smooth' });
+    });
+    
 });
