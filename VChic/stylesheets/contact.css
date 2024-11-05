@@ -1,0 +1,30 @@
+#main_body_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    flex-direction: column;
+}
+
+#ask_for_help {
+    margin-top: 5vh;
+    color: white;
+}
+
+#help_bar {
+    margin-top: 3vh;
+    width: 30%;
+    height: 4vh;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#faq {
+    display: flex;
+    flex-direction: row;
+}
+
+#faq p{
+    color: white;
+}
