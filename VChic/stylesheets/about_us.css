@@ -31,7 +31,6 @@ body {
 
 .card_about {
     margin-top: 3.5vh;
-    border: 1px solid blue;
     background-color: white;
     padding: 4vh;
     display: flex;
