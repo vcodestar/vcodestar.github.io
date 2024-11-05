@@ -29,7 +29,7 @@ body {
 }
 
 .card_about {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     background-color: white;
     margin-top: 3vh;
     padding: 4vh;
