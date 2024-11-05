@@ -1,5 +1,5 @@
 body {
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 #header_about {
@@ -26,22 +26,17 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 1.5vh; 
 }
 
 .card_about {
-    margin-top: 3.5vh;
+    border: 1px solid blue;
     background-color: white;
+    margin-top: 3vh;
     padding: 4vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-img {
-    height: 40vh;
-    width: 17vw;
 }
 
 .title_about {
@@ -80,6 +75,7 @@ footer {
     }
 
     #card_container {
+        flex-wrap: nowrap;
         flex-direction: column;
     }
 
