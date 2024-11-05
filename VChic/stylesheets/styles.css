@@ -204,13 +204,13 @@ footer {
     flex-direction: column;
 }
 
-footer span {
+footer a {
     color: rgb(71, 71, 71);
     cursor: pointer;
     transition: transform 0.2s ease; 
 }
 
-footer span:hover {
+footer a:hover {
     transform: scale(1.1); 
 }
 
