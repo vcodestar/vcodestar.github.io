@@ -24,7 +24,7 @@ function showAllItems() {
     items.forEach(item => {
         itemContainer.innerHTML += `
             <div class="item_card">
-                <img src="https://via.placeholder.com/200" alt="${item.category}">
+                <img src="image.png" alt="${item.category}">
                 <span class="item_title">${item.brand}</span>
                 <span class="item_price">${item.price}</span>
                 <i class="fa-regular fa-heart" id="hearted"></i>
@@ -39,7 +39,7 @@ function showItems(searchInput) {
         if (item.category.toLowerCase() === searchInput || item.brand.toLowerCase() === searchInput) {
             itemContainer.innerHTML += `
                 <div class="item_card">
-                    <img src="https://via.placeholder.com/200" alt="${item.category}">
+                    <img src="image.png" alt="${item.category}">
                     <span class="item_title">${item.brand}</span>
                     <span class="item_price">${item.price}</span>
                 </div>`;
@@ -56,7 +56,7 @@ function loadCategoryItems(category) {
         filteredItems.forEach(item => {
             itemContainer.innerHTML += `
                 <div class="item_card">
-                    <img src="https://via.placeholder.com/200" alt="${item.category}">
+                    <img src="image.png" alt="${item.category}">
                     <span class="item_title">${item.brand}</span>
                     <span class="item_price">${item.price}</span>
                 </div>`;

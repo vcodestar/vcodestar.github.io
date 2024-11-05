@@ -55,7 +55,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     padding: 2vh 3vh;
-    transition: color 0.2s ease, background-color 0.2s ease;
+    transition: color 1.2s ease, background-color 1.2s ease;
 }
 
 .link_about:hover {
