@@ -1,5 +1,5 @@
 body {
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 #header_about {
@@ -65,7 +65,7 @@ body {
 
 
 footer {
-    /* margin-top: 3.5vh; */
+    margin-top: 4vh; 
 }
 
 @media (max-width: 768px) {

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex-direction: column;
 }
 
@@ -13,7 +13,7 @@
 
 #help_bar {
     margin-top: 3vh;
-    width: 30%;
+    width: 50vw;
     height: 4vh;
     border-radius: 20px;
     text-align: center;
@@ -21,10 +21,83 @@
 }
 
 #faq {
+    padding: 10vh;
+    /* border: 1px solid orange; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#faq_header {
+    /* margin-top: 5vh; */
+    color: white;
+}
+
+#faq_question {
+    margin-top: 2vh;
+    border-bottom: 1px solid grey;
 }
 
 #faq p{
     color: white;
+}
+
+#questions, #contact_container {
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.question_header {
+    color: white;
+}
+
+#questions .question, #contact_container .contact_div {
+    flex: 1 1 calc(33.33% - 10px); 
+    margin: 0;
+}
+
+#contact_header {
+    color: white;
+    margin-top: 5vh;
+    border-bottom: 1px solid grey;
+}
+
+#contact_container {
+    margin-top: 5vh;
+}
+
+.contact_div {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_div b {
+    margin-top: 1vh;
+    color: white;
+}
+
+.contact_div p {
+    margin-top: 1vh;
+}
+
+@media (max-width: 768px) {
+
+    #faq {
+        padding: 1vh;
+    }
+
+    #help_bar { 
+        font-size: 1rem;
+    }
+
+    #questions, #contact_container  {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
 }
