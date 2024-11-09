@@ -1,4 +1,3 @@
-/* Base styles */
 body {
     display: flex;
     justify-content: center;
@@ -14,39 +13,36 @@ body {
     background-color: white;
     padding: 2vh;
     border-radius: 20px;
-    overflow: hidden; /* Hides overflow outside the rounded container */
+    overflow: hidden; 
 }
 
 .scroll_content {
     max-height: 56vh;
     overflow-y: auto;
-    padding-right: 10px; /* Adds space to avoid scrollbar overlay */
-    border-radius: inherit; /* Matches parent border-radius */
+    padding-right: 10px; 
+    border-radius: inherit; 
 }
 
-/* Custom scrollbar styles for WebKit browsers */
 .scroll_content::-webkit-scrollbar {
-    width: 8px; /* Scrollbar width */
+    width: 8px; 
 }
 
 .scroll_content::-webkit-scrollbar-track {
     background: transparent;
-    border-radius: 10px; /* Rounded scrollbar track */
+    border-radius: 10px; 
 }
 
 .scroll_content::-webkit-scrollbar-thumb {
     background-color: #bbb;
-    border-radius: 10px; /* Rounded scrollbar thumb */
-    border: 2px solid transparent; /* Adds inner space for rounded effect */
+    border-radius: 10px; 
+    border: 2px solid transparent; 
 }
 
-/* Firefox scrollbar styling */
 .scroll_content {
     scrollbar-width: thin;
     scrollbar-color: #bbb transparent;
 }
 
-/* Rounded scrollbar track for Firefox */
 .scroll_content::-moz-scrollbar-thumb {
     background-color: #bbb;
     border-radius: 10px;
@@ -92,34 +88,55 @@ body {
     margin-top: 5px;
 }
 
-/* Responsive adjustments for smaller screens */
+#checkout_button_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#checkout_button {
+    background-color: #5404d4;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 2vh;
+}
+
+#checkout_button:hover {
+    background-color: #4404aa;
+}
+
+
 @media (max-width: 768px) {
     #main_body_cart {
-        min-width: 80vw; /* Expand width on smaller screens */
-        padding: 2vh 1vh; /* Reduce padding */
+        min-width: 80vw;
+        padding: 2vh 1vh; 
     }
 
     .cart_item_card {
-        padding: 8px; /* Reduce padding */
+        padding: 8px; 
         margin: 8px 0;
     }
 
     .cart_item_image {
-        width: 60px; /* Reduce image size */
+        width: 60px; 
         height: 60px;
         margin-right: 10px;
     }
 
     .cart_item_name {
-        font-size: 16px; /* Reduce font size */
+        font-size: 16px; 
     }
 
     .cart_item_price {
-        font-size: 14px; /* Reduce font size */
+        font-size: 14px; 
     }
 }
 
-/* Further adjustments for extra-small screens (e.g., smartphones) */
 @media (max-width: 480px) {
     #main_body_cart {
         min-width: 90vw;
@@ -131,7 +148,7 @@ body {
     }
 
     .cart_item_image {
-        width: 50px; /* Further reduce image size */
+        width: 50px; 
         height: 50px;
     }
 
