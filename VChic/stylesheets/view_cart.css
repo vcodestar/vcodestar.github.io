@@ -112,6 +112,11 @@ body {
 
 
 @media (max-width: 768px) {
+
+    #menuButton {
+        display: none;
+    }
+
     #main_body_cart {
         min-width: 80vw;
         padding: 2vh 1vh; 
@@ -138,6 +143,11 @@ body {
 }
 
 @media (max-width: 480px) {
+
+    #menuButton {
+        display: none;
+    }
+
     #main_body_cart {
         min-width: 90vw;
     }

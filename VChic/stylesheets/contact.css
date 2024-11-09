@@ -87,6 +87,10 @@
 
 @media (max-width: 768px) {
 
+    #menuButton {
+        display: none;
+    }
+
     #faq {
         padding: 1vh;
     }

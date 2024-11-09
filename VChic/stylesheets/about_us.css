@@ -71,6 +71,10 @@ footer {
 
 @media (max-width: 768px) {
 
+    #menuButton {
+        display: none;
+    }
+
     body {
         overflow-y: auto;
     }
