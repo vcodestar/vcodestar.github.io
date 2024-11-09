@@ -30,6 +30,10 @@ body {
     flex: 0 0 10%; 
 }
 
+#VC {
+    color: #5404d4;
+}
+
 #my {
     color: white;
 }
