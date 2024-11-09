@@ -16,6 +16,7 @@ body {
     align-items: center;
     padding: 8vh;
     padding-top: 2vh;
+    margin-bottom: 5vh;
 }
 
 #card_container {
@@ -65,7 +66,7 @@ body {
 
 
 footer {
-    margin-top: 4vh; 
+    margin-top: 5vh; 
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,145 @@
+/* Base styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main_body_cart {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    min-height: 60vh;
+    min-width: 30vw;
+    background-color: white;
+    padding: 2vh;
+    border-radius: 20px;
+    overflow: hidden; /* Hides overflow outside the rounded container */
+}
+
+.scroll_content {
+    max-height: 56vh;
+    overflow-y: auto;
+    padding-right: 10px; /* Adds space to avoid scrollbar overlay */
+    border-radius: inherit; /* Matches parent border-radius */
+}
+
+/* Custom scrollbar styles for WebKit browsers */
+.scroll_content::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+}
+
+.scroll_content::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px; /* Rounded scrollbar track */
+}
+
+.scroll_content::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 10px; /* Rounded scrollbar thumb */
+    border: 2px solid transparent; /* Adds inner space for rounded effect */
+}
+
+/* Firefox scrollbar styling */
+.scroll_content {
+    scrollbar-width: thin;
+    scrollbar-color: #bbb transparent;
+}
+
+/* Rounded scrollbar track for Firefox */
+.scroll_content::-moz-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 10px;
+}
+
+
+.cart_item_card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+}
+
+.cart_item_image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.cart_item_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart_item_name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart_item_price {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #main_body_cart {
+        min-width: 80vw; /* Expand width on smaller screens */
+        padding: 2vh 1vh; /* Reduce padding */
+    }
+
+    .cart_item_card {
+        padding: 8px; /* Reduce padding */
+        margin: 8px 0;
+    }
+
+    .cart_item_image {
+        width: 60px; /* Reduce image size */
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .cart_item_name {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .cart_item_price {
+        font-size: 14px; /* Reduce font size */
+    }
+}
+
+/* Further adjustments for extra-small screens (e.g., smartphones) */
+@media (max-width: 480px) {
+    #main_body_cart {
+        min-width: 90vw;
+    }
+
+    .cart_item_card {
+        padding: 6px;
+        margin: 6px 0;
+    }
+
+    .cart_item_image {
+        width: 50px; /* Further reduce image size */
+        height: 50px;
+    }
+
+    .cart_item_name {
+        font-size: 14px;
+    }
+
+    .cart_item_price {
+        font-size: 12px;
+    }
+}
