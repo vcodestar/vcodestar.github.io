@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.category-item').forEach(item => {
         item.addEventListener('click', (event) => {
             const category = event.target.getAttribute('data-category'); 
+            toggleMenu();
             loadCategoryItems(category); 
         });
     });
