@@ -1,3 +1,4 @@
+// Handle browser tab close or page reload by canceling speech
 window.addEventListener('beforeunload', () => {
     speechSynthesis.cancel();
 });
@@ -32,11 +33,13 @@ let currentIndex = -1;
 let utterance = new SpeechSynthesisUtterance();
 const btns = document.getElementById('btns');
 
+// Update the text and cancel any ongoing speech
 function updateText() {
     speechSynthesis.cancel();
     document.getElementById('text-content').innerHTML = texts[currentIndex];
 }
 
+// Move to the next text
 function nextText() {
     btns.style.visibility = 'visible';
     if (currentIndex < texts.length - 1) {
@@ -45,6 +48,7 @@ function nextText() {
     }
 }
 
+// Move to the previous text
 function prevText() {
     if (currentIndex > 0) {
         currentIndex--;
@@ -52,27 +56,38 @@ function prevText() {
     }
 }
 
+// Start speaking the text
 function speak() {
-    speechSynthesis.cancel();
+    // Only initiate speech synthesis if it's triggered by a user interaction (click/tap)
+    if ('speechSynthesis' in window && currentIndex >= 0) {
+        speechSynthesis.cancel();  // Cancel any ongoing speech
 
-    const text = textsToAudio[currentIndex];
-    
-    utterance.text = text;
-    utterance.lang = 'en-US'; 
-    utterance.pitch = 1;      
-    utterance.rate = 1;       
-    utterance.volume = 1;     
+        const text = textsToAudio[currentIndex];
+        utterance.text = text;
+        utterance.lang = 'en-US'; 
+        utterance.pitch = 1;      
+        utterance.rate = 1;       
+        utterance.volume = 1;     
 
-    speechSynthesis.speak(utterance);
+        // Speak the text after cancelling any previous speech
+        speechSynthesis.speak(utterance);
+    }
 }
 
+// Pause the speech
 function pause() {
     speechSynthesis.cancel();
 }
 
+// Restart speech (start from the beginning)
 function restart() {
     speechSynthesis.cancel();
     const text = textsToAudio[currentIndex];
     utterance.text = text;
     speechSynthesis.speak(utterance);
 }
+
+// Ensure that speech is always triggered by user interaction (important for Android)
+document.getElementById('nextButton').addEventListener('click', () => nextText());
+document.getElementById('prevButton').addEventListener('click', () => prevText());
+document.getElementById('speakButton').addEventListener('click', () => speak());
