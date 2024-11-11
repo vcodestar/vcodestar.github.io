@@ -1,3 +1,7 @@
+window.addEventListener('beforeunload', () => {
+    speechSynthesis.cancel();
+});
+
 const texts = [
     `<h1 class="headerTitle">Who am I?</h1>
     <p id="iam">
