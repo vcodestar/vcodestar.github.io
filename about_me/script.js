@@ -91,3 +91,5 @@ function restart() {
 document.getElementById('nextButton').addEventListener('click', () => nextText());
 document.getElementById('prevButton').addEventListener('click', () => prevText());
 document.getElementById('speakButton').addEventListener('click', () => speak());
+document.getElementById('pauseButton').addEventListener('click', () => pause());
+document.getElementById('restartButton').addEventListener('click', () => restart());
