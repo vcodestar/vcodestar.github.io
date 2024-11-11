@@ -29,6 +29,7 @@ let utterance = new SpeechSynthesisUtterance();
 const btns = document.getElementById('btns');
 
 function updateText() {
+    speechSynthesis.cancel();
     document.getElementById('text-content').innerHTML = texts[currentIndex];
 }
 
