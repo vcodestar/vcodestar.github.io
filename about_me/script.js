@@ -32,7 +32,6 @@ const textsToAudio = [
 let currentIndex = -1;
 let utterance = new SpeechSynthesisUtterance();
 const btns = document.getElementById('btns');
-btns.style.visibility = 'visible';
 
 // Update the text and cancel any ongoing speech
 function updateText() {
@@ -42,6 +41,7 @@ function updateText() {
 
 // Move to the next text
 function nextText() {
+    btns.style.visibility = 'visible';
     if (currentIndex < texts.length - 1) {
         currentIndex++;
         updateText();
