@@ -28,6 +28,27 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
 }
 
+#homeButton {
+    color: #9C27B0;
+    position: absolute;
+    display: flex;
+    top: 3vh;
+    left: 5vh;
+    font-size: 3vh;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+    width: auto;
+    gap: 1vh;
+    transition: transform 0.3s ease;
+}
+
+#homeButton:hover {
+    transform: scale(1.2);
+}
+
 #vc {
     color: #9C27B0;
 }
@@ -195,6 +216,11 @@ li {
 }
 
 @media (max-width: 768px) {
+
+    #homeButton {
+        left: 2vh;
+    }
+
     #main-div {
         width: 90%;        
         height: 40%;      
