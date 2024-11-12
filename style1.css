@@ -14,21 +14,55 @@
   color: white;
 }
 /*///////////////////////////////////////////////////////////////////*/
-.login-button {
+.btn-container {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: #e91e63;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  display: flex;
+  top: 3vh;
+  left: 2vh;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   z-index: 9998;
+  width: auto;
+  gap: 1vh;
 }
 
-.login-button:hover {
+.btn-container .btn {
+  display: flex;
+  flex: 1; /* Equal space for each button */
+  width: 5%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1vh;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+
+.btn-container .btn:hover {
+  background-color: #0056b3;
+}
+
+#review-button {
+  background-color: #da1d5c;
+}
+
+#review-button:hover {
   background-color: #b9184e;
+}
+
+#about-button {
+  background-color: #4fc3dc;
+}
+
+#about-button:hover {
+  background-color: #3d96aa;
 }
 
 .signup-button {
