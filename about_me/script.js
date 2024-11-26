@@ -12,9 +12,15 @@ const texts = [
     `<h1 class="headerTitle">Experience</h1>
     <ul>
         <li>
-            <strong>Internship at Terracom SA</strong>
+            <strong> Internship at Archimedes Unit, Athena Research Center </strong>
+             <p>
+                <br>I am currently engaged in an internship at the Archimedes Unit, Athena Research Center. More details about my work and contributions will be shared soon.
+            </p><br><br><br>
+        </li>
+        <li>
+            <strong>Internship at Terracom SA</strong><br>
             <p>
-                During my internship at Terracom SA, I focused on two main areas: automation testing and web development. I worked with <strong>Cypress</strong> for end-to-end testing, creating automated test scripts to ensure the reliability and efficiency of the software. This involved writing, executing, and debugging tests to validate various user interactions and flows within the applications.
+                <br>During my internship at Terracom SA, I focused on two main areas: automation testing and web development. I worked with <strong>Cypress</strong> for end-to-end testing, creating automated test scripts to ensure the reliability and efficiency of the software. This involved writing, executing, and debugging tests to validate various user interactions and flows within the applications.
             </p>
             <p>
                 In addition to testing, I contributed to <strong>web development</strong> projects using <strong>Angular</strong>. My responsibilities included developing dynamic and responsive user interfaces, implementing front-end components, and collaborating with team members to enhance application functionality. This experience strengthened my skills in JavaScript, TypeScript, and modern front-end frameworks.
@@ -26,7 +32,8 @@ const texts = [
 
 const textsToAudio = [
     "Who am I? I am a senior undergraduate student in the Department of Computer Science and Engineering at the University of Ioannina, maintaining a GPA of 7.61/10 and currently just one class away from graduation. My primary interests lie in systems programming, application development, and artificial intelligence, where I have gained a strong blend of theoretical knowledge and hands-on experience. Throughout my studies and personal projects, I’ve worked to develop skills in software system design, machine learning applications, and creating innovative solutions to computational challenges.",
-    "Experience. Internship at Terracom SA. During my internship at Terracom SA, I focused on two main areas: automation testing and web development. I worked with Cypress for end-to-end testing, creating automated test scripts to ensure the reliability and efficiency of the software. This involved writing, executing, and debugging tests to validate various user interactions and flows within the applications. In addition to testing, I contributed to web development projects using Angular. My responsibilities included developing dynamic and responsive user interfaces, implementing front-end components, and collaborating with team members to enhance application functionality. This experience strengthened my skills in JavaScript, TypeScript, and modern front-end frameworks"
+    "Experience. Internship at Archimedes Unit, Athenah Research Center. I am currently engaged in an internship at the Archimedes Unit, Athenah Research Center. More details about my work and contributions will be shared soon.",
+    "Internship at Terracom SA. During my internship at Terracom SA, I focused on two main areas: automation testing and web development. I worked with Cypress for end-to-end testing, creating automated test scripts to ensure the reliability and efficiency of the software. This involved writing, executing, and debugging tests to validate various user interactions and flows within the applications. In addition to testing, I contributed to web development projects using Angular. My responsibilities included developing dynamic and responsive user interfaces, implementing front-end components, and collaborating with team members to enhance application functionality. This experience strengthened my skills in JavaScript, TypeScript, and modern front-end frameworks"
 ];
 
 let currentIndex = -1;
