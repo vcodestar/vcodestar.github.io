@@ -161,7 +161,7 @@ header {
 .image-column img {
     width: 60%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: fit-content; 
     border-radius: 20px; 
 }
 
