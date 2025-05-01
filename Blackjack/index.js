@@ -24,16 +24,20 @@ let hideCard = false;
 let tmpCardImgUrl = "";
 let tmpCardScore = 0;
 
-for (let suit of suits) {
-    for (let value of values) {
-        const filename = `${value}_of_${suit}.png`;
-        const imageUrl = `card_pngs/${filename}`
-        const card = new Card(suit, value, imageUrl);
-        deck.push(card);
+function initializeDeck() {
+    deck.length = 0;
+    for (let suit of suits) {
+        for (let value of values) {
+            const filename = `${value}_of_${suit}.png`;
+            const imageUrl = `card_pngs/${filename}`;
+            const card = new Card(suit, value, imageUrl);
+            deck.push(card);
+        }
     }
 }
 
-initGame()
+initializeDeck();
+initGame();
 
 function initGame() {
     playPlayer();
@@ -175,6 +179,7 @@ function flipCard() {
 replayBtn.onclick = function(){
     handleButtons("replay");
     botTurn = false;
+    initializeDeck();
     initGame();
 }
 
