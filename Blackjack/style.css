@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: #111;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+    padding: 1em;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+#button-container button {
+    min-width: 6em;
+    font-size: 1em;
+    border-radius: 18px;
+    padding: 0.6em 1em;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#draw-card-btn {
+    background-color: #4CAF50;  
+}
+
+#stand-card-btn {
+    background-color: #F44336;  
+}
+
+#replay-btn {
+    background-color: #2196F3;  
+}
+
+.card-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1em;
+    padding: 0.5em;
+    border: 2px solid #333;
+    border-radius: 12px;
+    background-color: #222;
+    align-items: center;
+    max-width: 100%; 
+}
+
+.card-container img {
+    width: 20vw; 
+    height: 10vh; 
+    max-width: 10em;
+    flex-shrink: 0; 
+}
