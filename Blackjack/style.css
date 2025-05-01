@@ -16,7 +16,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;  /* Change from space-around to flex-start */
     align-items: center;
     overflow: auto;
     padding: 1em;
@@ -51,23 +51,29 @@ body {
     background-color: #2196F3;  
 }
 
+/* Remove margin from <h1> elements */
+h1 {
+    margin: 2vh 2vw;
+    font-size: 1.5em; /* Optional: Set font size if needed */
+}
+
 .card-container {
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 1em;
     padding: 0.5em;
     border: 2px solid #333;
     border-radius: 12px;
     background-color: #222;
     align-items: center;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 .card-container img {
-    width: 20vw; 
-    height: 10vh; 
+    width: 20vw;
+    height: 10vh;
     max-width: 10em;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
