@@ -16,7 +16,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Change from space-around to flex-start */
+    justify-content: center;  
     align-items: center;
     overflow: auto;
     padding: 1em;
@@ -51,10 +51,9 @@ body {
     background-color: #2196F3;  
 }
 
-/* Remove margin from <h1> elements */
 h1 {
     margin: 2vh 2vw;
-    font-size: 1.5em; /* Optional: Set font size if needed */
+    font-size: 1.5em;
 }
 
 .card-container {
