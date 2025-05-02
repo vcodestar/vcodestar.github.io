@@ -7,7 +7,7 @@ export class Card {
 
     getCardValue(score) {
         if (this.value === "ace") {
-            return ((score + 11) > 21) ? 1 : 11;
+            return 11;
         }
         if (this.value === "jack" || this.value === "queen" || this.value === "king") {
             return 10;
